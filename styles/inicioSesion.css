@@ -39,13 +39,15 @@ header nav .logo img{
     margin-left: 20%;
     /* border: 1px solid black; */
     text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 .sesion .info{
     display: flex;
-
     width: 490px;
     height: 550px;
+    /* border: 1px solid black; */
     flex-direction: column;
     justify-content: space-between;
 }
@@ -128,4 +130,75 @@ header nav .logo img{
     color: red;
     text-decoration: underline;
  }
+
+ .sesion .form{
+    width: 545px;
+    height: 550px;
+    border: 1px solid #949494;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .sesion .form form{
+    flex-direction: column;
+    display: flex;
+    width: 80%;
+    
+ }
+
+ .sesion .form form label{
+    font-family: "Inter", serif;
+    text-align: start;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: bold;
+ }
+
+ .sesion .form form .email{
+    height: 40px;
+    border: 1px solid #949494;
+    outline: none;
+    font-size: 13px;
+    border-radius: 5px;
+    margin-bottom: 35px;
+ }
+
+ .sesion .form form .email:focus::placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.sesion .form form .btnContinuar{
+    background-color: #02A1E5;
+    height: 40px;
+    border-radius: 5px;
+    color: #fff;
+    font-family: "Inter", serif;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+ .separador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.linea {
+    flex: 1; 
+    height: 2px;
+    background-color: #ccc; /* Color de la línea */
+    margin: 0 10px;
+}
+
+.separador span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
 
