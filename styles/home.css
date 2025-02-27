@@ -25,4 +25,10 @@
     width: 40%;
     background-image: url(../assets/ftxa-aw-16-9-6a.png);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.infoPedido{
+    margin-top: 300px;
 }
