@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Usuario</title>
+    <link rel="stylesheet" href="styles\usuario.css">
+    <script defer src="js\usuario.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Usuario</h2>
+        </div>
+        <div class="content">
+            <label for="username"><strong>Usuario:</strong></label>
+            <input type="text" id="username" value="John Stuart">
+            
+            <br><br>
+            
+            <label for="profile"><strong>Perfil:</strong></label>
+            <select id="profile" onchange="updatePermissions()">
+                <option value="admin">Administrador</option>
+                <option value="editor">Editor</option>
+                <option value="viewer">Visor</option>
+            </select>
+            
+            <br><br>
+            
+            <h3>Permisos</h3>
+            <div id="permissions">
+                <label><input type="checkbox" class="perm" data-profile="admin" disabled> Administrador</label>
+                <label><input type="checkbox" class="perm" data-profile="admin,editor" disabled> Administrar usuarios</label>
+                <label><input type="checkbox" class="perm" data-profile="admin,editor" disabled> Editar productos</label>
+                <label><input type="checkbox" class="perm" data-profile="admin,editor,viewer" disabled> Cliente</label>
+                <label><input type="checkbox" class="perm" data-profile="admin" disabled> Administrador de pedidos</label>
+                <label><input type="checkbox" class="perm" data-profile="admin" disabled> Administrador de servicios</label>
+                <label><input type="checkbox" class="perm" data-profile="admin,editor" disabled> Análisis de datos</label>
+                <label><input type="checkbox" class="perm" data-profile="admin,editor,viewer" disabled> Colaborador</label>
+                <label><input type="checkbox" class="perm" data-profile="admin" disabled> Externo</label>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-container">
+        <button onclick="window.history.back()">Regresar</button>
+    </div>
+</body>
+</html>
