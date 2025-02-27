@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Usuarios</title>
+    <link rel="stylesheet" href="styles\administradorUsuarios.css">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <div class="header">
+        <h1>Usuarios</h1>
+    </div>
+
+    <!-- Barra de búsqueda -->
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Buscar Usuarios">
+        <button id="searchBtn">🔍</button>
+    </div>
+
+    <!-- Contenedor de la tabla -->
+    <div class="table-container">
+        <table id="userTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Usuario</th>
+                    <th>Correo</th>
+                    <th>Nombre</th>
+                    <th>Perfil</th>
+                    <th>Fecha</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí se insertarán las filas dinámicamente -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Controles de paginación -->
+    <div class="pagination">
+        <button id="prevPage">Anterior</button>
+        <span id="pageInfo">Página 1</span>
+        <button id="nextPage">Siguiente</button>
+    </div>
+
+    <!-- Botón de regresar -->
+    <div class="button-container">
+        <button id="backButton">Regresar</button>
+    </div>
+
+    <script src="js\administradorUsuarios.js"></script>
+</body>
+</html>
