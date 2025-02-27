@@ -1,0 +1,97 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Cambiado para que los elementos estén más arriba */
+    min-height: 100vh;
+    padding-top: 20px; /* Espacio arriba para simular el header */
+}
+
+
+.contenedor-central {
+    background-color: #ffffff;
+    border-radius: 2px; /* Esquinas menos redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Ocupa más espacio horizontal */
+    max-width: 1200px; /* Limita el ancho máximo */
+    padding: 0 0 30px 0; /* Eliminamos el padding para que el título ocupe todo el ancho */
+    text-align: center;
+    margin-top: 20px; /* Espacio entre el header simulado y el contenedor */
+    overflow: hidden; /* Evita que el contenido sobresalga */
+}
+
+/* Rectángulo azul celeste con el título */
+.titulo-seccion {
+    background-color: #02A1E5; /* Azul celeste */
+    border-radius: 5px 5px 0 0; /* Esquinas redondeadas solo arriba */
+    padding: 20px; /* Más espacio interno */
+    margin-bottom: 40px; /* Más espacio entre el título y los botones */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    
+}
+
+.titulo-seccion h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 28px; /* Título más grande */
+}
+
+/* Botones en dos columnas */
+.botones-contenedor {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Más espacio entre columnas */
+    padding: 70px 20px; /* Espacio horizontal interno */
+}
+
+/* Columnas */
+.columna-izquierda, .columna-derecha {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Más espacio entre botones */
+    width: 48%; /* Ancho de las columnas */
+}
+
+/* Estilos de los botones */
+.boton {
+    background-color: #02A1E5; /* Azul */
+    color: #ffffff;
+    padding: 20px; /* Botones más grandes */
+    border-radius: 5px; /* Esquinas menos redondeadas */
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px; /* Texto más grande */
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #40C8F7; /* Azul más oscuro */
+}
+
+/* Contenedor del botón "Regresar" */
+.contenedor-regresar {
+    margin-top: 80px; /* Más espacio entre el contenedor central y el botón */
+}
+
+/* Botón "Regresar" */
+.boton-regresar {
+    background-color: #BB0000; /* Rojo */
+    color: #ffffff;
+    padding: 20px 40px; /* Botón más grande */
+    border-radius: 5px; /* Esquinas menos redondeadas */
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px; /* Texto más grande */
+    transition: background-color 0.3s ease;
+}
+
+.boton-regresar:hover {
+    background-color: #c82333; /* Rojo más oscuro */
+}
