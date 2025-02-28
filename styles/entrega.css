@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+.entrega{
+    width: 1216px;
+    height: 650px;
+    margin-top: 5%;
+    margin-left: 20%;
+    /* border: 1px solid black; */
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.text_e{
+width: 400px;
+height: 100px;
+margin-left: 300px;
+font-family: "Inter", serif;
+text-align: left;
+
+}
+.caja_e {
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+    width: 400px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-left: 290px;
+}
+.caja_e span {
+    font-size: 12px;
+    color: #777;
+    font-family: "Inter", serif;
+}
+
+.caja_e input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #007bff; /* Color azul para los radios */
+    cursor: pointer;
+    font-family: "Inter", serif;
+}
+
+
+.confirm-btn {
+    width: 200px;
+    padding: 12px;
+    background-color: #0099ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+    font-family: "Inter", serif;
+    margin-left: 540px;
+}
+
+.confirm-btn:hover {
+    background-color: #007bff;
+}
+body {
+    background-color: #f1f1f1;
+}
