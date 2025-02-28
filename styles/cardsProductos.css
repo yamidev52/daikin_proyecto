@@ -1,0 +1,130 @@
+.cardsProductos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    margin-top: -20px;
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    font-family: "Inter", serif;
+    flex-wrap: wrap; /* Permitir que las tarjetas se envuelvan en múltiples filas */
+  }
+
+  
+  
+.cardsProductos .cardProducto {
+    width: 350px;
+    height: 550px;
+    background-color: white;
+    margin: 10px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 15px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    overflow: hidden; /* Asegurar que el contenido adicional no cambie el tamaño de la tarjeta */
+  }
+  
+   .cardsProductos .cardProducto:hover {
+    transform: translateY(-0.1px);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    background-color: #f0f0f0;
+  }
+  
+    .cardsProductos .cardProducto img {
+    width: 80%;
+    text-align: center;
+    object-fit: cover;
+  }
+  
+    .cardsProductos .cardProducto .infoProducto {
+    width: 80%;
+    text-align: left;
+    padding: 15px;
+  }
+  
+  .cardProducto .infoProducto .descripcion {
+    width: 80%;
+    height: 50px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Número de líneas antes de ocultar el texto */
+    -webkit-box-orient: vertical;
+  }
+  
+.cardsProductos .cardProducto .infoProducto h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #000;
+  }
+  
+.cardsProductos .cardProducto .infoProducto h2 {
+      font-size: 25px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #484747;
+    }
+  
+.cardsProductos .cardProducto .infoProducto p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #a6a6a6;
+    margin-bottom: 15px;
+  }
+  
+.cardsProductos .cardProducto .infoProducto .agregarCarrito {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #02a1e5;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+.cardsProductos .cardProducto .infoProducto .agregarCarrito:hover {
+    background-color: #a000ea;
+    transform: scale(1.05);
+  }
+  
+.cardsProductos .cardProducto .infoProducto .agregarCarrito i{
+      margin-left: 15px;
+      align-items: center;
+  }
+  
+.cardsProductos .cardProducto .infoProducto .descripcion p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #a6a6a6;
+    margin-bottom: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Número de líneas antes de ocultar el texto */
+    -webkit-box-orient: vertical;
+  }
+  
+.cardsProductos .cardProducto .rating {
+      width: 75%;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin: 2px 0;
+    gap: 0.5px;
+  }
+  
+.cardsProductos .cardProducto .rating .star {
+    font-size: 35px;
+    color: #d3b60e; /* Color dorado para las estrellas */
+    margin: 0 2px;
+  }
