@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Perfiles</title>
+    <link rel="stylesheet" href="styles\perfilSistema.css">
+    <script defer src="js\perfilSistema.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Gestión de Perfiles</h2>
+        </div>
+        <div class="content">
+            <label for="profileName"><strong>Nombre del Perfil:</strong></label>
+            <input type="text" id="profileName" value="Administrador">
+            
+            <br><br>
+
+            <h3>Permisos</h3>
+            <div id="permissions">
+                <label><input type="checkbox" class="perm" value="admin"> Administrador</label>
+                <label><input type="checkbox" class="perm" value="manage_users"> Administrar usuarios</label>
+                <label><input type="checkbox" class="perm" value="edit_products"> Editar productos</label>
+                <label><input type="checkbox" class="perm" value="client_access"> Cliente</label>
+                <label><input type="checkbox" class="perm" value="order_admin"> Administrador de pedidos</label>
+                <label><input type="checkbox" class="perm" value="service_admin"> Administrador de servicios</label>
+                <label><input type="checkbox" class="perm" value="data_analysis"> Análisis de datos</label>
+                <label><input type="checkbox" class="perm" value="collaborator"> Colaborador</label>
+                <label><input type="checkbox" class="perm" value="external"> Externo</label>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-container">
+        <button id="savePermissions">Guardar Cambios</button>
+        <button onclick="window.history.back()">Regresar</button>
+    </div>
+</body>
+</html>
