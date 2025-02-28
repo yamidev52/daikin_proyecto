@@ -189,7 +189,8 @@ footer {
     font-family: "Inter", serif;
     margin-top: auto; /* Hace que el footer se quede en la parte inferior */
     position: sticky;
-    bottom: 0;
+
+    z-index: 5;
 }
 
 footer .footer-section {

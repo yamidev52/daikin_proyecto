@@ -1,244 +1,498 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.portada{
-    background-color: #02A1E5;
-    width: 1500px;
-    height: 400px;
-    display: flex;
-    margin: 200px auto 0 auto;
-    flex-direction: row;
-    
+.portada {
+  background-color: #02a1e5;
+  width: 1500px;
+  height: 400px;
+  display: flex;
+  margin: 200px auto 0 auto;
+  flex-direction: row;
 }
 
-.portada .info{
-    width: 55%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 20px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    font-family: "Inter", serif;
+.portada .info {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-family: "Inter", serif;
 }
 
-.portada .info .titulo{
-    width: 80%;
-    text-align: center;
+.portada .info .titulo {
+  width: 80%;
+  text-align: center;
 }
 
-.portada .info .titulo h3{
-    color: white;
-    font-weight: 400;
-    font-size: 30px;
+.portada .info .titulo h3 {
+  color: white;
+  font-weight: 400;
+  font-size: 30px;
 }
 
-.portada .info .titulo h1{
-    font-size: 50px;
-    color: white;
-    font-weight: 700;
+.portada .info .titulo h1 {
+  font-size: 50px;
+  color: white;
+  font-weight: 700;
 }
 
 .portada .info .descripcion {
-    width: 45%;
-    text-align: center;
+  width: 45%;
+  text-align: center;
 }
 
-.portada .info .descripcion p{
-    color: white;
-    font-weight: 300;
-    font-size: 22px;
+.portada .info .descripcion p {
+  color: white;
+  font-weight: 300;
+  font-size: 22px;
 }
 
-.portada .info h2{
-    color: white;
-    font-weight: 900;
-    font-size: 40px;
+.portada .info h2 {
+  color: white;
+  font-weight: 900;
+  font-size: 40px;
 }
 
-.portada .img{
-    width: 45%;
-    background-image: url(../assets/ftxa-aw-16-9-6a.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    overflow: hidden;
+.portada .img {
+  width: 45%;
+  background-image: url(../assets/ftxa-aw-16-9-6a.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
 }
 
-.portada .degradar{
-    width: 1500px;
-    height: 50px; /* Reducir la altura del degradado */
-    background: linear-gradient(to bottom, rgba(2, 161, 229, 0), rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 1) 100%);
-    position: absolute; /* Cambiar a absolute para mantener su posición relativa al contenedor */
-    bottom: 0; /* Asegurar que el degradado esté en la parte inferior del contenedor */
+.portada .degradar {
+  width: 1500px;
+  height: 50px; /* Reducir la altura del degradado */
+  background: linear-gradient(
+    to bottom,
+    rgba(2, 161, 229, 0),
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  position: absolute;
+  margin-top: 245px;
 }
 
-.cards{
-    display: flex;
-    flex-direction: row;
+.cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: -15px; /* Ajustar la posición de las cards */
+  width: 1500px;
+  height: 400px;
+  padding: 20px;
+  z-index: 3;
+  font-family: "Inter", serif;
+}
+
+.cards .card {
+  width: 400px;
+  height: 390px;
+  background-color: white;
+  margin: 10px;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3); /* Ajustar el box-shadow para que sea más sutil y notorio */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 15px; /* Ajustar el padding solo en los lados */
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Agregar transición para suavizar el efecto */
+}
+
+.cards .card:hover {
+  transform: translateY(-0.3px); /* Mover la tarjeta hacia arriba */
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); /* Hacer la sombra más notoria */
+  background-color: #f0f0f0; /* Cambiar el color de fondo */
+}
+
+.cards .card .tittleCard {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.cards .card .imgdescripcion {
+  width: 80%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+  gap: 10px;
+}
+
+.cards .card .imgdescripcion img {
+  width: 60%;
+  height: auto;
+  object-fit: cover;
+}
+
+.cards .card .imgdescripcion p {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 15px;
+  font-weight: 300;
+}
+
+.cards .card button {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  background-color: #02a1e5;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.cards .card button:hover {
+  background-color: #a000ea;
+  transform: scale(1.05);
+}
+
+.buscador {
+  width: 1500px;
+  height: 200px;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  margin-top: 25px;
+  font-family: "Inter", serif;
+}
+
+.buscador button {
+  width: 150px;
+  height: 45px;
+  background-color: transparent;
+  color: #a6a6a6;
+  font-size: 15px;
+  font-weight: 600;
+  border: #a6a6a6 1px solid;
+  margin-left: 10px;
+  border-radius: 50px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.buscador button:hover {
+  background-color: #a6a6a6;
+  color: white;
+  transform: scale(1.05);
+}
+
+.buscador .search {
+  width: 800px;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+.buscador .search input {
+  width: 95%;
+  height: 100%;
+  border: none;
+  font-size: 15px;
+  font-weight: 300;
+  outline: none; /* Eliminar el borde al hacer clic */
+}
+
+.buscador .search input::placeholder {
+  color: #a6a6a6; /* Color del placeholder */
+  font-style: italic; /* Estilo del placeholder */
+  transition: color 0.3s; /* Transición para el color del placeholder */
+}
+
+.buscador .search input:focus::placeholder {
+  color: #a000ea; /* Cambiar el color del placeholder al enfocar */
+}
+
+a {
+  color: #02a1e5;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #a000ea;
+  text-decoration: underline;
+}
+
+.section {
+  width: 1500px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  margin: auto;
+  margin-top: 50px;
+  font-family: "Inter", serif;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+.section .tituloVendido {
+  display: flex;
+  width: 35%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section .cardsProductos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: -20px;
+  width: 90%;
+  height: auto;
+  padding: 20px;
+  font-family: "Inter", serif;
+  flex-wrap: wrap; /* Permitir que las tarjetas se envuelvan en múltiples filas */
+}
+
+.section .cardsProductos .cardProducto {
+  width: 350px;
+  height: 550px;
+  background-color: white;
+  margin: 10px;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 15px;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  overflow: hidden; /* Asegurar que el contenido adicional no cambie el tamaño de la tarjeta */
+}
+
+.section .cardsProductos .cardProducto:hover {
+  transform: translateY(-0.1px);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  background-color: #f0f0f0;
+}
+
+.section .cardsProductos .cardProducto img {
+  width: 80%;
+  text-align: center;
+  object-fit: cover;
+}
+
+.section .cardsProductos .cardProducto .infoProducto {
+  width: 80%;
+  text-align: left;
+  padding: 15px;
+}
+
+.cardProducto .infoProducto .descripcion {
+  width: 80%;
+  height: 50px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Número de líneas antes de ocultar el texto */
+  -webkit-box-orient: vertical;
+}
+
+.section .cardsProductos .cardProducto .infoProducto h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.section .cardsProductos .cardProducto .infoProducto h2 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #484747;
+  }
+
+.section .cardsProductos .cardProducto .infoProducto p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #a6a6a6;
+  margin-bottom: 15px;
+}
+
+.section .cardsProductos .cardProducto .infoProducto .agregarCarrito {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  background-color: #02a1e5;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.section .cardsProductos .cardProducto .infoProducto .agregarCarrito:hover {
+  background-color: #a000ea;
+  transform: scale(1.05);
+}
+
+.section .cardsProductos .cardProducto .infoProducto .agregarCarrito i{
+    margin-left: 15px;
     align-items: center;
-    justify-content: space-around;
-    margin: auto;
-    margin-top: -20px; /* Ajustar la posición de las cards */
-    width: 1500px;
-    height: 400px;
-    padding: 20px;
-    z-index: 3;
-    font-family: "Inter", serif;
 }
 
-.cards .card{
-    width: 400px;
-    height: 390px;
-    background-color: white;
-    margin: 10px;
-    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3); /* Ajustar el box-shadow para que sea más sutil y notorio */
+.section .cardsProductos .cardProducto .infoProducto .descripcion p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #a6a6a6;
+  margin-bottom: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Número de líneas antes de ocultar el texto */
+  -webkit-box-orient: vertical;
+}
+
+.section .cardsProductos .cardProducto .rating {
+    width: 75%;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  margin: 2px 0;
+  gap: 0.5px;
+}
+
+.section .cardsProductos .cardProducto .rating .star {
+  font-size: 35px;
+  color: #d3b60e; /* Color dorado para las estrellas */
+  margin: 0 2px;
+}
+
+.section .servicios{
+    width: 1500px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-    padding: 0 15px; /* Ajustar el padding solo en los lados */
-    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Agregar transición para suavizar el efecto */
-}
-
-.cards .card:hover{
-    transform: translateY(-0.3px); /* Mover la tarjeta hacia arriba */
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); /* Hacer la sombra más notoria */
-    background-color: #f0f0f0; /* Cambiar el color de fondo */
-}
-
-.cards .card .tittleCard{
-    width: 100%;
-    text-align: center;
-    font-size: 20px;
-    margin-top: 10px;
-}
-
-.cards .card .imgdescripcion{
-    width: 80%;
-    height: auto;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    padding: 0 15px;
-    gap: 10px;
-}
-
-.cards .card .imgdescripcion img{
-    width: 60%;
-    height: auto;
-    object-fit: cover;
-}
-
-.cards .card .imgdescripcion p{
-    font-size: 16px;
-    text-align: center;
-    margin-top: 15px;
-    font-weight: 300;
-}
-
-.cards .card button{
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    background-color: #02A1E5;
-    color: white;
-    padding: 10px;
-    font-size: 15px;
-    font-weight: 600;
-    border-radius: 5px;
-    border: none;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.cards .card button:hover{
-    background-color: #A000EA;
-    transform: scale(1.05);
-}
-
-.buscador{
-    width: 1500px;
-    height: 200px;
-    background-color: #f0f0f0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    align-items: left;
     margin: auto;
-
+    margin-top: 50px;
     font-family: "Inter", serif;
-}
-
-.buscador button{
-    width: 150px;
-    height: 45px;
-    background-color: transparent;
-    color: #A6A6A6;
-    font-size: 15px;
-    font-weight: 600;
-    border: #A6A6A6 1px solid;
-    margin-left: 10px;
-    border-radius: 50px;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.buscador button:hover{
-    background-color: #A6A6A6;
-    color: white;
-    transform: scale(1.05);
-}
-
-.buscador .search{
-    width: 800px;
-    height: 45px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 15px;
     box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
 }
 
-.buscador .search input{
-    width: 95%;
-    height: 100%;
-    border: none;
-    font-size: 15px;
-    font-weight: 300;
-    outline: none; /* Eliminar el borde al hacer clic */
+.servicios .cardsServicios{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    font-family: "Inter", serif;
+    justify-content: space-around;
 }
 
-.buscador .search input::placeholder{
-    color: #A6A6A6; /* Color del placeholder */
-    font-style: italic; /* Estilo del placeholder */
-    transition: color 0.3s; /* Transición para el color del placeholder */
+.servicios .cardServicio{
+    width: 450px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; /* Asegurar que el pseudo-elemento se posicione correctamente */
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    padding: 25px;
+    align-items: end;
+    justify-content: space-between;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    transition: all ease-in-out 0.3s; /* Agregar transición para suavizar el efecto */
 }
 
-.buscador .search input:focus::placeholder{
-    color: #A000EA; /* Cambiar el color del placeholder al enfocar */
+.servicios .cardServicio:hover{
+    transform: translateY(-5.5px);
+   
+    
 }
 
-.buscador a{
-    color: #02A1E5;
-    font-size: 15px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: color 0.3s;
+.card1{
+    background-image: url(../img/Instalacion.png);
 }
 
-.buscador a:hover{
-    color: #A000EA;
-    text-decoration: underline;
+.card2{
+    background-image: url(../img/Mantenimiento.png);
+}
+
+.card3{
+    background-image: url(../img/Soporte.png);
+}
+
+.servicios .cardServicio .icon{
+    width: 40%;
+    height: 40%;
+    background: rgba(255, 255, 255, 1); 
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    display: flex;
+    z-index: 2;
+}
+
+.servicios .cardServicio .icon img{
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.servicios .cardServicio::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; /* Altura del degradado */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); /* Degradado de negro a transparente */
+}
+
+.cardServicio .cardServicioInfo{
+    width: 65%;
+    color: white;
+    margin-left: 20px;
+    z-index: 2;
+}
+
+.vendidoOficina{
+    margin-bottom: 30px;
 }
 
 
