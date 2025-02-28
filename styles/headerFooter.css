@@ -80,9 +80,20 @@ header nav {
     cursor: pointer;
 }
 
+b{
+    font-weight: 600;
+}
+
+.menu ul li a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+}
+
 .menu ul li:hover {
     opacity: 0.7; /* Efecto hover para las primeras opciones del menú */
 }
+
 
 .menu ul li ul {
     display: none;

@@ -7,26 +7,36 @@
     font-family: "Inter", serif;
 }
 
-
-header + .contenedor {
+.contenedor {
     display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex: auto;
     width: 90%;
     margin: 200px auto 0 auto;
+    align-items: flex-start; /* Alinea los elementos al inicio del contenedor */
 }
 
 aside {
-    width: 25%;
-    margin-right: 20px;
-    /* contenido del aside */
     position: sticky;
+    top: 0;
+    width: 22%; /* Ajusta el ancho según sea necesario */
+    height: 100vh; /* Altura completa de la ventana */
+    overflow-y: auto; /* Permite el scroll dentro del aside */
+    background-color: #f8f8f8; /* Color de fondo opcional */
+    padding: 20px; /* Espaciado interno opcional */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra opcional */
 }
 
-.productos {
+.productos { /* Ajusta el margen izquierdo para que no se superponga con el aside */
+    padding: 20px; /* Espaciado interno opcional */
     display: flex;
     justify-content: left;
-    width: 75%;
+    width: 70%;
     margin-top: 0;
     flex-direction: column;
+    flex: 1;
+    margin-left: 20px; /* Espacio entre el aside y el contenido principal */
 }
 
 .search {

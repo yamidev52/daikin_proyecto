@@ -7,6 +7,7 @@
     <title>Daikin Mexico</title>
     <link rel="stylesheet" href="/styles/headerFooter.css" />
     <link rel="stylesheet" href="/styles/home.css" />
+    <link rel="stylesheet" href="styles/cardsProductos.css">
     <link rel="stylesheet"
         href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css" />
     <!-- <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css'> -->
@@ -28,18 +29,19 @@
         <nav>
             <div class="menu">
                 <ul>
-                    <li>Inicio</li>
-                    <li>Productos</li>
+                    <li><a href="home.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
                     <li>
-                        Servicios <i class="fi fi-rr-angle-small-down"></i>
+                        <b>Servicios</b> <i class="fi fi-rr-angle-small-down"></i>
                         <ul>
-                            <li>Instalación</li>
-                            <li>Mantenimiento</li>
-                            <li>Reparación</li>
+                            <li><a href="#">Instalación</a></li>
+                            <li><a href="#">Mantenimiento</a></li>
+                            <li><a href="#">Reparación</a></li>
+
                         </ul>
                     </li>
-                    <li>Ayuda</li>
-                    <li>Pedidos</li>
+                    <li><a href="#">Ayuda</a></li>
+                    <li><a href="#">Pedidos</a></li>
                 </ul>
             </div>
 
@@ -80,7 +82,7 @@
                 <p>¡Disfruta de ofertas y productos a precios bajos!</p>
             </div>
 
-            <button>Mostrar Productos</button>
+            <button onclick="window.location.href='productos.html'">Mostrar Productos</button>
         </div>
 
         <div class="card">
