@@ -17,12 +17,21 @@ header{
     width: 100%;
     height: 80px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-    display: fixed;
 }
 
 header nav{
     display: flex;
     margin: 10px;
+    justify-content: space-between;
+}
+
+header nav i{
+    color: #02A1E5;
+    font-size: 40px;
+    cursor: pointer;;
+    align-items: center;
+    justify-content: center;
+    margin: auto 30px;
 }
 
 header nav .logo img{
@@ -32,15 +41,17 @@ header nav .logo img{
     align-items: center;
 }
 
+
 .sesion{
     width: 1116px;
     height: 550px;
-    margin-top: 5%;
-    margin-left: 20%;
+    
     /* border: 1px solid black; */
     text-align: center;
     display: flex;
     justify-content: space-between;
+    margin: auto;
+    margin-top: 5%;
 }
 
 .sesion .info{
@@ -156,18 +167,20 @@ header nav .logo img{
     font-weight: bold;
  }
 
- .sesion .form form .email{
+ .sesion .form form input{
     height: 40px;
     border: 1px solid #949494;
     outline: none;
     font-size: 13px;
     border-radius: 5px;
     margin-bottom: 35px;
+    letter-spacing: 0.8px;
  }
 
- .sesion .form form .email:focus::placeholder {
+ .sesion .form form input:focus::placeholder {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
+    
 }
 
 .sesion .form form .btnContinuar{
@@ -179,28 +192,69 @@ header nav .logo img{
     font-size: 15px;
     cursor: pointer;
     font-weight: bold;
+    margin-bottom: 20px;
+    transition:  0.3s ease-in-out;
 }
+
+.sesion .form form .btnContinuar:hover{
+    background-color: #a000ea;
+    font-weight: bold;
+}
+
+.sesion .form form p{
+    font-family: "Inter", serif;
+    font-size: 15px;
+    color: #949494;
+    margin-bottom: 20px;
+    font-weight: 500;
+}   
+
+
 
  .separador {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin: 20px 0;
+    margin: 15px 0;
+    font-family: "Inter", serif;
 }
 
 .linea {
     flex: 1; 
     height: 2px;
-    background-color: #ccc; /* Color de la línea */
+    background-color: #949494; /* Color de la línea */
     margin: 0 10px;
 }
 
 .separador span {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     color: #333;
+    align-items: center;
 }
+
+.sesion .form form .btnQR{
+    background-color: transparent;
+    height: 40px;
+    border-radius: 5px;
+    color: #949494;
+    font-family: "Inter", serif;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 500;
+    border: 1px solid #949494;
+    transition:  0.3s ease-in-out;
+}
+
+.sesion .form form .btnQR:hover{
+    background-color: #02A1E5;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+
 
 footer{
     width: 100%;
@@ -213,4 +267,6 @@ footer{
     font-family: "Inter", serif;
     font-size: 15px;
 }
+
+
 

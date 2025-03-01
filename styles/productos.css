@@ -94,6 +94,7 @@ aside .checkCategoria{
 
 .checkCategoria .optionCheck input[type="checkbox"] {
     transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
 }
 
 .checkCategoria .optionCheck input[type="checkbox"]:checked {
@@ -137,6 +138,16 @@ aside .opiniones .rating .star{
 .cardsProductos .card {
     flex: 1 1 calc(33.33% - 20px); /* 3 productos por fila con espacio entre ellos */
     margin: 10px;
+}
+
+.star {
+    cursor: pointer;
+    font-size: 24px;
+    color: #ccc; /* Color de las estrellas vacías */
+}
+
+.star.filled {
+    color: #ff0; /* Color de las estrellas llenas */
 }
 
 

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de Sesion - DAIKIN</title>
     <link rel="stylesheet" href="/styles/inicioSesion.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 </head>
 <body>
     <header>
@@ -12,6 +13,10 @@
             <div class="logo">
                 <img src="/assets/logo_daikin.png" alt="">
             </div>
+
+            <button onclick="window.location.href = 'home.html'">
+                <i class="fi fi-rr-arrow-small-left"></i>
+            </button>
         </nav>
     </header>
 
@@ -40,9 +45,13 @@
             </div>
     
             <div class="form">
-                <form action="post">
+                <form action="">
                     <label for="">E-mail o credencial corporativa</label>
-                    <input class="email" type="text" placeholder="Ingrese su email o credencial...">
+                    <input class="email" type="email" placeholder="Ingrese su email o credencial...">
+
+                    <label for="">Contraseña</label>
+                    <input class="password" type="password" placeholder="Ingrese su contraseña...">
+
                     <button class="btnContinuar">Continuar</button>
                     <p>¿No tienes cuenta? <a href="">Crear Cuenta</a></p>
 
