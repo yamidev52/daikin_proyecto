@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesion - DAIKIN</title>
+    <link rel="stylesheet" href="/styles/inicioSesion.css">
+    <link rel="stylesheet" href="/styles/crearCuenta.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="/assets/logo_daikin.png" alt="">
+            </div>
+
+            <button onclick="window.location.href = 'home.html'">
+                <i class="fi fi-rr-arrow-small-left"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="sesion crearCuenta">
+            <div class="info infoCuenta">
+                <div class="text">
+                    <h2>
+                        Crear Cuenta
+                    </h2>
+
+                    <p>Ingresa los datos que solicitamos para crear tu cuenta.</p>
+                </div>
+    
+                <div class="ayudas ayudasCuenta">
+                    <button class="boton-problema">
+                        <span class="icono-izquierda">
+                            <img src="/assets/bloqueado.png" alt="Ícono de seguridad">
+                            Tengo un problema para iniciar sesión
+                        </span>
+                        <span class="icono-derecha">➜</span>
+                    </button>
+                    <div class="textAyuda ayudaCuenta">
+                        <a href="">Necesito Ayuda</a>
+                    </div>
+                    
+                </div>
+            </div>
+    
+            <div class="form">
+                <form action="">
+                    <label for="">Credencial corporativa</label>
+                    <input class="email" type="text" placeholder="Ingrese su credencial corporativa...">
+
+                    <label for="">E-mail</label>
+                    <input class="email" type="email" placeholder="Ingrese su email...">
+
+                    <label for="">Contraseña</label>
+                    <input class="password" type="password" placeholder="Ingrese su contraseña...">
+
+                    <div class="infoPassword">
+                        <ul>
+                            <li>Debe contener 8 carácteres</li>
+                            <li> Debe contener mayúsculas y minúsculas</li>
+                            <li>Incluye números y símbolo</li>
+                        </ul>
+
+                        <p>Al hacer clic en Regístrate, aceptas los Términos de uso  y reconoces la Política de privacidad.</p>
+                    </div>
+
+                    <button class="btnContinuar">Registrarse</button>
+                    <p>¿Ya tienes una cuenta? <a href="login.html">Iniciar Sesion</a></p>
+
+                    
+
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+   
+
+    
+    
+</body>
+</html>

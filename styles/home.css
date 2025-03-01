@@ -498,6 +498,10 @@ a:hover {
     margin-bottom: 30px;
 }
 
+.options button{
+  border: none;
+  cursor: pointer;
+}
 
 
 
